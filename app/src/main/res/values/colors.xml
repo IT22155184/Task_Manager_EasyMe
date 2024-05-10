@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#DAFDBA</color> <!--primary color-->
+    <color name="components_1">#45C4B0</color> <!--secondary color-->
+    <color name="components_2">#9AEBA3</color> <!--secondary color-->
+    <color name="buttons">#13678A</color> <!--accent color-->
+</resources>

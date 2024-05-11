@@ -35,17 +35,27 @@
                 android:maxHeight="170dp"
                 android:text="@string/description"
                 android:textSize="14sp"
-                android:textColor="@color/components_1"/>
+                android:textColor="@color/black"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/taskPriority"
+                android:layout_marginTop="8dp"
+                android:maxHeight="170dp"
+                android:text="@string/priority"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+
+            <TextView
                 android:id="@+id/taskDeadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:maxHeight="170dp"
                 android:text="@string/deadline"
-                android:textSize="14sp"
-                android:textColor="@color/components_1"/>
+                android:textColor="#510404"
+                android:textSize="14sp" />
 
 
 

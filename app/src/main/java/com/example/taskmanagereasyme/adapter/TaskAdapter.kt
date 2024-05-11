@@ -19,7 +19,8 @@ class TaskAdapter : RecyclerView.Adapter<TaskAdapter.TaskViewHolder>() {
             return oldItem.id == newItem.id &&
                     oldItem.taskDescription == newItem.taskDescription &&
                     oldItem.taskTitle == newItem.taskTitle &&
-                    oldItem.taskDeadline == newItem.taskDeadline
+                    oldItem.taskDeadline == newItem.taskDeadline &&
+                    oldItem.taskPriority == newItem.taskPriority
         }
 
         override fun areContentsTheSame(oldItem: Task, newItem: Task): Boolean {
@@ -43,6 +44,7 @@ class TaskAdapter : RecyclerView.Adapter<TaskAdapter.TaskViewHolder>() {
         holder.itemBinding.taskTitle.text = currentTask.taskTitle
         holder.itemBinding.taskDescription.text = currentTask.taskDescription
         holder.itemBinding.taskDeadline.text = currentTask.taskDeadline
+        holder.itemBinding.taskPriority.text = currentTask.taskPriority
 
         holder.itemView.setOnClickListener{
             val direction = HomeFragmentDirections.actionHomeFragmentToEditTaskFragment(currentTask)

@@ -12,6 +12,7 @@ data class Task(
     val id: Int,
     val taskTitle: String,
     val taskDescription: String,
-    val taskDeadline: String
+    val taskDeadline: String,
+    val taskPriority: String
 
 ): Parcelable

@@ -19,7 +19,7 @@
             android:layout_marginTop="16dp"
             android:text="@string/edit_task"
             android:textStyle="bold"
-            android:textColor="@color/components_1"
+            android:textColor="@color/black"
             android:textSize="24sp" />
 
         <EditText
@@ -30,6 +30,7 @@
             android:padding="12dp"
             android:textSize="20sp"
             android:layout_below="@id/editTaskHeading"
+            android:backgroundTint="@color/white"
             android:background="@drawable/blue_border"
             android:layout_marginTop="16dp"
             android:maxLines="1"/>
@@ -41,19 +42,49 @@
             android:layout_below="@id/editTaskTitle"
             android:layout_marginTop="12dp"
             android:background="@drawable/blue_border"
+            android:backgroundTint="@color/white"
             android:gravity="top"
             android:hint="@string/edit_the_description"
             android:padding="12dp"
             android:textSize="18sp" />
 
+        <TextView
+            android:id="@+id/editPriorityLabel"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTaskDescription"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="34dp"
+            android:text="@string/priority"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/editTaskPriority"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:layout_width="397dp"
+            android:layout_height="66dp"
+            android:layout_below="@id/editPriorityLabel"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/blue_border"
+            android:backgroundTint="@color/white"
+            android:entries="@array/priority_levels"
+            android:padding="12dp"
+            android:spinnerMode="dropdown" />
+
         <EditText
             android:id="@+id/editTaskDeadline"
-            android:layout_width="347dp"
-            android:layout_height="57dp"
+            android:layout_width="385dp"
+            android:layout_height="64dp"
             android:layout_below="@id/editTaskTitle"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="272dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="404dp"
+            android:backgroundTint="@color/white"
             android:background="@drawable/blue_border"
             android:gravity="top"
             android:hint="@string/edit_deadline"
@@ -61,7 +92,7 @@
             android:textSize="18sp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/editNoteFab"
+            android:id="@+id/editTask"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="20dp"
